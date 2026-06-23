@@ -54,21 +54,53 @@
     <div class="card why">
       <h2>Why This Matters</h2>
       <div class="why-grid">
-        <div class="why-box"><div class="why-icon">🎓</div><strong>Hands-on Education</strong><span>Real engineering experience beyond the classroom.</span></div>
-        <div class="why-box"><div class="why-icon">👥</div><strong>Community Impact</strong><span>Local support for a student-led project.</span></div>
-        <div class="why-box"><div class="why-icon">🌎</div><strong>Cross-Border Team</strong><span>Bay Area and Vancouver students working together.</span></div>
-        <div class="why-box"><div class="why-icon">🔧</div><strong>Real Problem Solving</strong><span>Budgeting, building, testing, and improving.</span></div>
-        <div class="why-box"><div class="why-icon">🏁</div><strong>Racing with Purpose</strong><span>Teamwork, resilience, and long-term commitment.</span></div>
-      </div>
+  <div class="why-box">
+    <div class="why-icon"><i data-lucide="graduation-cap"></i></div>
+    <strong>Hands-on Education</strong>
+    <span>Real engineering experience beyond the classroom.</span>
+  </div>
+
+  <div class="why-box">
+    <div class="why-icon"><i data-lucide="users"></i></div>
+    <strong>Community Impact</strong>
+    <span>Local support for a student-led project.</span>
+  </div>
+
+  <div class="why-box">
+    <div class="why-icon"><i data-lucide="globe-2"></i></div>
+    <strong>Cross-Border Team</strong>
+    <span>Bay Area and Vancouver students working together.</span>
+  </div>
+
+  <div class="why-box">
+    <div class="why-icon"><i data-lucide="wrench"></i></div>
+    <strong>Real Problem Solving</strong>
+    <span>Budgeting, building, testing, and improving.</span>
+  </div>
+
+  <div class="why-box">
+    <div class="why-icon"><i data-lucide="trophy"></i></div>
+    <strong>Racing with Purpose</strong>
+    <span>Teamwork, resilience, and long-term commitment.</span>
+  </div>
+</div>
     </div>
 
     <div class="card team" id="team">
       <h2>Meet the Team</h2>
       <div class="team-grid">
-        <div class="person"><div class="avatar">👤</div><strong>Max</strong><span>Project Lead</span></div>
-        <div class="person"><div class="avatar">👤</div><strong>Xavier</strong><span>Logistics</span></div>
-        <div class="person"><div class="avatar">👤</div><strong>Thomas</strong><span>Media</span></div>
-        <div class="person"><div class="avatar">👤</div><strong>Adam</strong><span>Mechanical</span></div>
+        <div class="person"><div class="avatar">
+      <img class="team-img max-img" src="assets/max.jpg" alt="Max">
+    </div><strong>Max</strong><span>Project Lead</span></div>
+        <div class="person"><div class="avatar">
+      <img class="team-img xavier-img" src="assets/xavier.png" alt="Xavier">
+    </div><strong>Xavier</strong><span>Logistics</span></div>
+        <div class="person"><div class="avatar">
+      <img class="team-img thomas-img" src="assets/thomas.jpeg" alt="Thomas">
+    </div><strong>Thomas</strong><span>Media</span></div>
+        <div class="person"><div class="avatar">
+      <img class="team-img adam-img" src="assets/adam.png" alt="Adam">
+    </div><strong>Adam</strong><span>Mechanical</span></div>
       </div>
       <a class="red-link" href="contact.html">Meet the full team →</a>
     </div>
@@ -85,9 +117,9 @@
 
     <div class="card funding">
       <h2>Funding Goal</h2>
-      <div class="amount">$0 raised</div>
+      <div class="amount">$750 raised</div>
       <p>of our $15,000 goal</p>
-      <div class="progress-track"><div class="progress-fill" style="--progress: 0%;"></div></div>
+      <div class="progress-track"><div class="progress-fill" style="--progress: 5%;"></div></div>
       <p>Every contribution helps us build, test, and race.</p>
       <a class="red-link" href="contact.html">See how your support helps →</a>
     </div>
@@ -125,10 +157,21 @@
       <h2>Follow the Build</h2>
       <p>Follow updates, photos, behind-the-scenes work, sponsor shoutouts, testing, and race weekend coverage.</p>
       <div class="socials">
-        <div class="social">📸 Instagram: @49thparallelracing</div>
-        <div class="social">▶ YouTube: 49th Parallel Racing</div>
-        <div class="social">✉ Newsletter / Email Updates</div>
-      </div>
+  <div class="social">
+    <i data-lucide="camera"></i>
+    <span>Instagram: @49thparallelracing</span>
+  </div>
+
+  <div class="social">
+    <i data-lucide="circle-play"></i>
+    <span>YouTube: 49th Parallel Racing</span>
+  </div>
+
+  <div class="social">
+    <i data-lucide="mail"></i>
+    <span>Newsletter / Email Updates</span>
+  </div>
+</div>
     </div>
   </section>
 </main>
@@ -153,5 +196,9 @@
 </footer>
 <div class="copyright">© 2026 49th Parallel Racing. All rights reserved.</div>
 
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
 </body>
 </html>
