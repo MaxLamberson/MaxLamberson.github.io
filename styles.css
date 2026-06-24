@@ -531,6 +531,43 @@ td:first-child {
   min-height: 130px;
 }
 
+/* added manually for instagram mention on update page 6/23 */
+.instagram-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--red);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 14px 16px;
+  margin: 18px 0 16px;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.instagram-note svg {
+  width: 20px;
+  height: 20px;
+  color: var(--red);
+  flex-shrink: 0;
+}
+
+.instagram-note strong {
+  color: var(--red);
+}
+
+.instagram-note a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+.instagram-note a:hover {
+  text-decoration: underline;
+}
+
 .form-box input,
 .form-box textarea,
 .form-box select {
@@ -751,12 +788,11 @@ td:first-child {
 }
 
 .thomas-team-page {
-  transform: scale(2.5) translate(-3.4%, 0%);
+  transform: scale(2.5) translate(-4%, 0%);
 }
 
 .adam-team-page {
-  object-position: center 30%;
-  transform: scale(1.00);
+  transform: scale(3) translate(2%, 20%);
 }
 
 .friendship-section {
@@ -1047,7 +1083,7 @@ button.btn {
 }
 
 .adam-img {
-  transform: scale(1) translateY(0%);
+  transform: scale(3.3) translate(3%, 21.5%);
 }
 
 /* Make the Team page use the same visual language as the other subpages */
