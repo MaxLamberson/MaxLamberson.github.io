@@ -710,8 +710,9 @@ td:first-child {
 .member-photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transform-origin: center center;
+  background: #f1f2f5;
 }
 
 .member-info {
@@ -740,18 +741,17 @@ td:first-child {
 
 /* Individual team page image adjustments */
 .max-team-page {
-  object-position: center 44%;
-  transform: scale(1.04);
+  transform: scale(1.65) translateY(11.5%);
+
 }
 
 .xavier-team-page {
-  object-position: 58% 28%;
-  transform: scale(1.14);
+    transform: scale(2.4) translate(-3.5%, 15%);
+
 }
 
 .thomas-team-page {
-  object-position: 60% 36%;
-  transform: scale(1.14);
+  transform: scale(2.5) translate(-3.4%, 0%);
 }
 
 .adam-team-page {
