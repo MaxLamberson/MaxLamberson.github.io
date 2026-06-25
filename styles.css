@@ -1487,3 +1487,82 @@ button.btn {
     border-bottom-color: var(--red);
   }
 }
+
+/* ================================
+   Sponsors Page Mobile Fix
+================================ */
+
+@media (max-width: 760px) {
+  /* Prevent horizontal page breaking */
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Make page cards fit properly */
+  .page-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 14px;
+  }
+
+  .page-grid .card,
+  .page-grid .wide,
+  .page-grid .half,
+  .page-grid .third,
+  .page-grid .two-third {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Fix huge text inside sponsors/contact/update pages */
+  .page-grid .card h2 {
+    font-size: 22px;
+    line-height: 1.1;
+    margin-bottom: 14px;
+  }
+
+  .page-grid .card p {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .page-grid .amount {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  /* Fix progress card */
+  .progress-track {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Fix sponsor table overflow */
+  .page-grid table {
+    min-width: 640px;
+    font-size: 12px;
+  }
+
+  .page-grid .wide {
+    overflow-x: auto;
+  }
+
+  .page-grid .wide::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  /* Fix giant spacing */
+  .wrap {
+    width: calc(100% - 32px);
+    padding: 16px 0 40px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 14px;
+  }
+}
