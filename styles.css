@@ -1139,3 +1139,296 @@ button.btn {
   letter-spacing: 0.01em;
   margin: -4px 0 18px;
 }
+
+/* ================================
+   Strong Mobile Fixes
+================================ */
+
+@media (max-width: 760px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Header / nav */
+  .nav {
+    height: auto;
+    padding: 12px 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo-number {
+    font-size: 32px;
+  }
+
+  .logo-text {
+    font-size: 13px;
+  }
+
+  .nav > .btn {
+    padding: 9px 12px;
+    font-size: 12px;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 4px 0 0;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    padding: 8px 0 10px;
+    font-size: 13px;
+    border-bottom-width: 2px;
+  }
+
+  /* Hero sections */
+  .hero {
+    min-height: 360px;
+    padding: 46px 18px 70px;
+    background-position: center;
+  }
+
+  .hero.small {
+    min-height: 240px;
+    padding: 46px 18px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 0.98;
+  }
+
+  .hero.small h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Main wrapper */
+  .wrap {
+    width: calc(100% - 28px);
+    padding: 14px 0 36px;
+  }
+
+  /* Snapshot top stats */
+  .snapshot {
+    grid-template-columns: 1fr;
+    margin-top: -36px;
+  }
+
+  .snap-item {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    padding: 18px;
+  }
+
+  .snap-item:last-child {
+    border-bottom: none;
+  }
+
+  /* Cards */
+  .grid,
+  .page-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .about,
+  .why,
+  .team,
+  .plan,
+  .funding,
+  .sponsor-table,
+  .partners,
+  .follow,
+  .wide,
+  .half,
+  .third,
+  .two-third {
+    grid-column: 1 / -1;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  .card h2,
+  .section h2 {
+    font-size: 18px;
+  }
+
+  .card p,
+  .section p {
+    font-size: 15px;
+  }
+
+  /* Why This Matters */
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .why-box {
+    border-left: none;
+    border-bottom: 1px solid var(--line);
+    padding: 18px 10px;
+  }
+
+  .why-box:last-child {
+    border-bottom: none;
+  }
+
+  .why-icon {
+    margin-bottom: 12px;
+  }
+
+  .why-box strong {
+    font-size: 15px;
+  }
+
+  .why-box span {
+    font-size: 13px;
+  }
+
+  /* Homepage team card */
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .avatar {
+    height: 135px;
+  }
+
+  .person strong {
+    font-size: 14px;
+  }
+
+  .person span {
+    font-size: 11px;
+  }
+
+  /* Project plan */
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .phase {
+    padding: 16px;
+  }
+
+  .phase strong {
+    font-size: 15px;
+  }
+
+  .phase span {
+    font-size: 13px;
+  }
+
+  /* Tables */
+  .sponsor-table {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 620px;
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 9px 7px;
+  }
+
+  /* Partner logos */
+  .partner-logos {
+    grid-template-columns: 1fr;
+  }
+
+  /* Build update cards */
+  .update-card {
+    grid-template-columns: 1fr;
+  }
+
+  .update-date {
+    min-height: auto;
+    padding: 18px;
+  }
+
+  /* Team page */
+  .team-intro {
+    grid-template-columns: 1fr;
+    padding: 36px 0 20px;
+  }
+
+  .team-member-large,
+  .team-member-large.reverse {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 14px;
+  }
+
+  .team-member-large.reverse .member-photo {
+    order: 0;
+  }
+
+  .member-photo {
+    height: 330px;
+  }
+
+  .member-info {
+    padding: 8px 4px 14px;
+  }
+
+  .member-info h2 {
+    font-size: 36px;
+  }
+
+  .friendship-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-cta {
+    padding: 30px 22px;
+    border-radius: 20px;
+  }
+
+  /* Contact form */
+  .form-box input,
+  .form-box textarea,
+  .form-box select {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 26px 18px;
+    gap: 22px;
+  }
+}
