@@ -1577,36 +1577,39 @@ button.btn {
 
 @media (max-width: 760px) {
   .team .avatar {
-    height: 150px;
+    width: 100%;
+    height: 160px;
     overflow: hidden;
+    background: #f1f2f5;
   }
 
   .team .avatar img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transform-origin: center;
+    display: block;
+    object-fit: cover !important;
+    transform: none !important;
+    transform-origin: center center;
   }
 
-  /* Individual mobile crops */
-
+  /* Max: bring his face upward into the center */
   .team .max-img {
-    object-position: 0% 7%;
-    transform: scale(1);
+    object-position: 50% 58% !important;
   }
 
+  /* Xavier: already close; center his head and shoulders */
   .team .xavier-img {
-    object-position: 0% 20%;
-    transform: scale(1);
+    object-position: 50% 45% !important;
   }
 
+  /* Thomas: move far enough down in the original portrait
+     to center his face instead of showing only the trees */
   .team .thomas-img {
-    object-position: 0% 10%;
-    transform: scale(1);
+    object-position: 50% 44% !important;
   }
 
+  /* Adam: keep the crop near the top so his entire head appears */
   .team .adam-img {
-    object-position: center 45%;
-    transform: scale(1);
+    object-position: 50% 8% !important;
   }
 }
