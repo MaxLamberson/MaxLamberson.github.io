@@ -3435,3 +3435,423 @@ button.btn {
   }
 
 }
+
+
+/* ==========================================
+   SVMC SPONSOR TILE
+========================================== */
+
+.svmc-sponsor-tile {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 340px;
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  gap: 12px;
+  padding: 28px;
+
+  background: #fff;
+  border: 1px solid #e1e4ea;
+  border-radius: 16px;
+
+  text-align: center;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.svmc-sponsor-tile img {
+  display: block !important;
+
+  width: 180px !important;
+  height: 180px !important;
+  max-width: 100% !important;
+  max-height: 180px !important;
+
+  flex: none !important;
+  object-fit: contain !important;
+  margin: 0 auto 8px !important;
+
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.svmc-sponsor-tile strong {
+  display: block;
+  width: 100%;
+
+  color: #17191f;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.svmc-sponsor-tile span {
+  display: block;
+  width: 100%;
+
+  color: #6a707d;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.svmc-sponsor-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+@media (max-width: 700px) {
+  .svmc-sponsor-tile {
+    min-height: 280px;
+    padding: 24px;
+  }
+
+  .svmc-sponsor-tile img {
+    width: 145px !important;
+    height: 145px !important;
+  }
+}
+
+
+/* ==========================================
+   OCTOBER 2026 BUILD UPDATES
+========================================== */
+
+.oct-build-card {
+  grid-column: 1 / -1;
+
+  display: block;
+
+  padding: 34px 38px;
+  margin-bottom: 4px;
+
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+/* Header and date label */
+
+.oct-update-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-bottom: 18px;
+}
+
+.oct-update-number {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 14px;
+
+  background: var(--soft-red);
+  border: 1px solid #ffd7dc;
+  border-radius: 999px;
+
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.055em;
+}
+
+.oct-update-date {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Typography */
+
+.oct-build-card h2 {
+  max-width: 850px;
+
+  margin: 0 0 18px;
+
+  color: var(--dark);
+
+  font-size: clamp(25px, 3vw, 34px);
+  font-weight: 900;
+  line-height: 1.17;
+  letter-spacing: -0.035em;
+}
+
+.oct-build-card > p {
+  max-width: 940px;
+
+  margin: 0 0 15px;
+
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* Build photographs */
+
+.oct-update-image {
+  max-width: 880px;
+  margin: 25px 0;
+
+  overflow: hidden;
+
+  background: #f6f7f9;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.oct-update-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 0;
+}
+
+.oct-update-image figcaption {
+  padding: 11px 17px;
+
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Four smaller upgrade descriptions */
+
+.oct-work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+
+  margin: 24px 0;
+}
+
+.oct-work-item {
+  padding: 21px 23px;
+
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 13px;
+}
+
+.oct-work-item h3 {
+  margin: 0 0 7px;
+
+  color: var(--dark);
+  font-size: 17px;
+  font-weight: 850;
+}
+
+.oct-work-item p {
+  margin: 0;
+
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* Fundraising highlight */
+
+.oct-fundraising {
+  max-width: 850px;
+
+  margin: 25px 0;
+  padding: 28px 30px;
+
+  background: #17191f;
+  border-radius: 15px;
+
+  color: #fff;
+}
+
+.oct-fundraising-label {
+  color: #ff737d;
+
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+}
+
+.oct-fundraising-amount {
+  margin-top: 10px;
+
+  color: #fff;
+  font-size: clamp(42px, 6vw, 62px);
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.oct-fundraising p {
+  margin: 9px 0 0;
+
+  color: #d1d5db;
+  font-size: 14px;
+}
+
+.oct-progress-track {
+  width: 100%;
+  height: 12px;
+
+  margin-top: 23px;
+
+  background: #484b52;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.oct-progress-fill {
+  width: 46.667%;
+  height: 100%;
+
+  background: #ef4350;
+  border-radius: 999px;
+}
+
+.oct-progress-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+
+  margin-top: 11px;
+
+  color: #d1d5db;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Donation link */
+
+.oct-support-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 5px;
+
+  color: var(--red);
+  font-size: 15px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.oct-support-link:hover {
+  color: var(--red-dark);
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .oct-build-card {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+
+  .oct-update-header {
+    margin-bottom: 15px;
+  }
+
+  .oct-build-card h2 {
+    font-size: 26px;
+  }
+
+  .oct-build-card > p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .oct-work-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .oct-work-item {
+    padding: 18px;
+  }
+
+  .oct-update-image {
+    margin: 21px 0;
+  }
+
+  .oct-fundraising {
+    padding: 24px 21px;
+  }
+
+}
+
+
+
+/* ==========================================
+   CLEAN BUILD UPDATE PHOTOGRAPHS
+========================================== */
+
+.oct-update-image {
+  display: block;
+
+  width: 100%;
+  max-width: 620px;
+
+  margin: 26px auto !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.oct-update-image img {
+  display: block;
+
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+
+  aspect-ratio: 3 / 2;
+  object-fit: cover !important;
+  object-position: center 58%;
+
+  border-radius: 12px;
+  margin: 0 !important;
+}
+
+.oct-update-image figcaption {
+  margin-top: 9px;
+  padding: 0 !important;
+
+  background: transparent;
+
+  color: #6a707d;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .oct-update-image {
+    max-width: 100%;
+    margin: 20px auto !important;
+  }
+
+  .oct-update-image img {
+    aspect-ratio: 4 / 3;
+  }
+}
